@@ -1,0 +1,4247 @@
+{
+	"info": {
+		"_postman_id": "238ae51d-28f7-486f-a3a4-08805771cde2",
+		"name": "MoiPayWay API",
+		"description": "MoiPayWay API enables you to build any payment related application such as marketplace, loan, saving & investment system, subscription system, payment checkout, payroll and so much more.\r\n\r\nVariable: baseURL - Value: https://api.moipayway.com\r\n\r\nVariable: token - Value: Token gotten from Authentication\r\n\r\nVariable: merchant_id - Value: Merchant Unique ID\r\n\r\n\r\nIf you face any challenges don't hesitate to contact us at hello@moipayway.com\r\n\r\n",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Sign In",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/signin"
+					},
+					"response": []
+				},
+				{
+					"name": "Sign Up",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "othernames",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "subscribe_newsletter",
+									"value": "",
+									"description": "Yes or No",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/signup"
+					},
+					"response": []
+				},
+				{
+					"name": "Recover Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/recover/account"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "lastname",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "othernames",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/update/names"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Phone",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/update/phone"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Email",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/update/email"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Address",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/update/address"
+					},
+					"response": []
+				},
+				{
+					"name": "Change Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/change/password"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Bank Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account_no",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/update/bank/details"
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "from",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "to",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/filter/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Order Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_order_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/order/details"
+					},
+					"response": []
+				},
+				{
+					"name": "Orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Added Orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/added/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Profile Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/profile/details"
+					},
+					"response": []
+				},
+				{
+					"name": "Wallet Transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coverage",
+									"value": "",
+									"description": "NGN",
+									"type": "text"
+								},
+								{
+									"key": "destination",
+									"value": "",
+									"description": "NGN or USD",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pin",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://api.moipayway.com/user/wallet/transfer",
+							"protocol": "https",
+							"host": [
+								"api",
+								"moipayway",
+								"com"
+							],
+							"path": [
+								"user",
+								"wallet",
+								"transfer"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Wallet Transactions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token ",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "from",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "to",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/filter/wallet/transactions"
+					},
+					"response": []
+				},
+				{
+					"name": "Wallet Transactions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/wallet/transactions"
+					},
+					"response": []
+				},
+				{
+					"name": "Sign out",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/signout"
+					},
+					"response": []
+				},
+				{
+					"name": "Lock Transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "timestamp",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/lock/transfer"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Pin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pin",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/update/pin"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Notification",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email_notification",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sms_notification",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "access_code",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/user/update/notification"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fetch",
+			"item": [
+				{
+					"name": "Merchant",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/fetch/merchant"
+					},
+					"response": []
+				},
+				{
+					"name": "Search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "quary",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/fetch/search"
+					},
+					"response": []
+				},
+				{
+					"name": "KYC",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_refrence_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/fetch/kyc",
+						"description": "To access this endpoint a order request must be initiated to get the 'order_reference_code' \r\n\r\nusing the product_type_id '83' for BVN request\r\n\r\nusing the product_type_id '427' for NIN request"
+					},
+					"response": []
+				},
+				{
+					"name": "Bank Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "bank_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"description": "optional (Use to view charges for wallet transfer or disbursement)",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "destination",
+									"value": "",
+									"description": "optional (To view the currency in transfer or disbursement mode)",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/fetch/bank/account"
+					},
+					"response": []
+				},
+				{
+					"name": "Banks",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "action",
+									"value": "all",
+									"type": "text"
+								},
+								{
+									"key": "bank_code",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/fetch/banks"
+					},
+					"response": []
+				},
+				{
+					"name": "Currency Exchange",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "from",
+									"value": "",
+									"description": "Allowed currency on type - fiattocrypto and cryptotocrypto \nNGN - Nigeria Nigeria\nUSD - US Dollar\nEUR - Euro\nGBP - Pounds\nLTC - Litecoin\nXBT - Bitcoin\nETH - Ethereum\nXRP - Ripple\n",
+									"type": "text"
+								},
+								{
+									"key": "to",
+									"value": "",
+									"description": "Allowed currency on type - fiattocrypto and cryptotocrypto \nNGN - Nigeria Nigeria\nUSD - US Dollar\nEUR - Euro\nGBP - Pounds\nLTC - Litecoin\nXBT - Bitcoin\nETH - Ethereum\nXRP - Ripple\n",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"description": "Allowrd type\nfiattofiat\ncryptotocrypto\nfiattocrypto",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/fetch/currency/exchange",
+						"description": "This endpoint allows you to convert from fiat to fiat, crypto to crypto and fiat to crypto"
+					},
+					"response": []
+				},
+				{
+					"name": "Access Code",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "channel",
+									"value": "",
+									"description": "SMS or EMAIL",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/fetch/access/code"
+					},
+					"response": []
+				},
+				{
+					"name": "Charges",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "type",
+									"value": "",
+									"description": "Credit or Debit or Verification",
+									"type": "text"
+								},
+								{
+									"key": "method",
+									"value": "",
+									"description": "Card for Payment or NIN for Verifcation",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "destination",
+									"value": "",
+									"description": "Currency",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/fetch/charges"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Merchant",
+			"item": [
+				{
+					"name": "Access Accounts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"description": "For Accessing Single Merchant Account",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/access/accounts"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Coupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "max_usage",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/add/coupon"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Custom Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "custom_account_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/add/custom/account"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "active_status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_category_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/add/product",
+						"description": "Add products for E-commerce. Event Listing, Tickets, Donation and so much more"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Shipping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "active",
+									"value": "",
+									"description": "Yes \nNo",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "",
+									"description": "bike\ncar\ntrain\nplane\nbus",
+									"type": "text"
+								},
+								{
+									"key": "target",
+									"value": "",
+									"description": "items \nhumans",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"description": "distin - using exact location name\ndynamic - using of km",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "",
+									"description": "0\n200",
+									"type": "text"
+								},
+								{
+									"key": "class",
+									"value": "",
+									"description": "economy\nfirst class\nbusiness class",
+									"type": "text"
+								},
+								{
+									"key": "negotiable",
+									"value": "",
+									"description": "Yes\nNo",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/add/shipping"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Subaccount",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_code",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/add/subaccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Team Member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/add/team/member"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "active_status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "shipping_allowed",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/add/type"
+					},
+					"response": []
+				},
+				{
+					"name": "Counts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/counts"
+					},
+					"response": []
+				},
+				{
+					"name": "Coupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon_required",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/coupon"
+					},
+					"response": []
+				},
+				{
+					"name": "Coupons",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/coupons"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "decription",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/create/account"
+					},
+					"response": []
+				},
+				{
+					"name": "Custom Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account_refrence",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/custom/account"
+					},
+					"response": []
+				},
+				{
+					"name": "Custom Accounts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/custom/accounts"
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "from",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "to",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/filter/orders "
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Wallet Transactions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "from",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "to",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/filter/wallet/transactions"
+					},
+					"response": []
+				},
+				{
+					"name": "Manage Order Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"order_reference_code\" : \"\",\r\n\"merchant_id\" : \"\",\r\n\"token\" : \"\",\r\n\"action\" : \"\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/merchant/manage/order/status"
+					},
+					"response": []
+				},
+				{
+					"name": "Orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "order_status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "limit",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "order_by",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "from_payment_stamp",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "to_payment_stamp",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/product"
+					},
+					"response": []
+				},
+				{
+					"name": "Products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/products"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Custom Accounts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "custom_account",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/remove/custom/accounts"
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Team Member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"token\":\"\",\r\n\"merchant_id\" :\"\",\r\n\"merchant_team_id\" :\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/merchant/remove/team/member"
+					},
+					"response": []
+				},
+				{
+					"name": "Shipping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_shipping_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/shipping"
+					},
+					"response": []
+				},
+				{
+					"name": "Shippings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_type_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/shippings"
+					},
+					"response": []
+				},
+				{
+					"name": "Subaccount",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_account_code",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/subaccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Subaccounts",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/subaccounts"
+					},
+					"response": []
+				},
+				{
+					"name": "Team",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/team"
+					},
+					"response": []
+				},
+				{
+					"name": "Type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_type_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/type"
+					},
+					"response": []
+				},
+				{
+					"name": "Types",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/types"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Account",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "limit_transfer_amount_allowed",
+									"value": "",
+									"description": "Yes or No",
+									"type": "text"
+								},
+								{
+									"key": "highest_transfer_amount_allowed",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "allow_user_transfer",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "user_topup_bearer",
+									"value": "",
+									"description": "merchant or user",
+									"type": "text"
+								},
+								{
+									"key": "user_transfer_bearer",
+									"value": "",
+									"description": "merchant or user",
+									"type": "text"
+								},
+								{
+									"key": "vat",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/update/account"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Coupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "active_status",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/update/coupon"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "active_status",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/update/product"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Shipping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_shipping_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "active_status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "target",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "class",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "negotiable",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/update/shipping"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Subaccount",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "account_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_account_code",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/update/subaccount"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_type_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "shipping_allowed",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/update/type"
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Logo",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/upload/logo"
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Product Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/upload/product/image"
+					},
+					"response": []
+				},
+				{
+					"name": "Upload Type Image",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "image_name",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_type_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/upload/type/image"
+					},
+					"response": []
+				},
+				{
+					"name": "Wallet Transactions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/wallet/transactions"
+					},
+					"response": []
+				},
+				{
+					"name": "Wallet Transfer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "account_no",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coverage",
+									"value": "",
+									"description": "NGN",
+									"type": "text"
+								},
+								{
+									"key": "environment",
+									"value": "",
+									"description": "live or test",
+									"type": "text"
+								},
+								{
+									"key": "destination",
+									"value": "",
+									"description": "NGN or USD",
+									"type": "text"
+								},
+								{
+									"key": "pin",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/wallet/transfer"
+					},
+					"response": []
+				},
+				{
+					"name": "Add Transfer Settings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "extra_rate",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "capped",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/add/transfer/settings"
+					},
+					"response": []
+				},
+				{
+					"name": "Transfer Settings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/transfer/settings"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Transfer Settings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "rate",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "extra_rate",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "capped",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/update/transfer/settings"
+					},
+					"response": []
+				},
+				{
+					"name": "Lock Transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "timestamp",
+									"value": "",
+									"description": "Y-m-d H:i:s",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/lock/transfer"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Pin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pin",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/update/pin"
+					},
+					"response": []
+				},
+				{
+					"name": "Query Commission Status",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "acquirer_merchant_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "extension",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/merchant/query/commission/status"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_refrence_code",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/order/details"
+					},
+					"response": []
+				},
+				{
+					"name": "Add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_shipping_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "recurring",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_type_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_account_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "payment_method_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "recipient",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "shipping_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/order/add"
+					},
+					"response": []
+				},
+				{
+					"name": "Manage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"token\": \"\",\r\n    \"action\": \"update or remove\",\r\n    \"product_order_id\": \"\",\r\n    \"recipient\": \"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://api.moipayway.com/order/manage"
+					},
+					"response": []
+				},
+				{
+					"name": "Bulk Process",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_shipping_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "recurring",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_type_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_account_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "payment_method_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "recipient",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "shipping_address",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/order/bulk/process"
+					},
+					"response": []
+				},
+				{
+					"name": "Single Process",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_type_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"description": "External Payment Process",
+									"type": "text"
+								},
+								{
+									"key": "merchant_shipping_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_team_id",
+									"value": "",
+									"description": "Used For Logistics Purposes",
+									"type": "text"
+								},
+								{
+									"key": "recipient",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/order/single/process"
+					},
+					"response": []
+				},
+				{
+					"name": "Reorder",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_reference_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/order/reorder"
+					},
+					"response": []
+				},
+				{
+					"name": "History",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_type_id",
+									"value": "",
+									"description": "Optional. This Can be Used",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"description": "Optional. This Can be Used",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/order/history",
+						"description": "This endpoint allows you to retrieve existing order made on a product_type_id"
+					},
+					"response": []
+				},
+				{
+					"name": "Cart",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/order/cart",
+						"description": "This endpoint allows you to retrieve carted orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Coupon",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "coupon",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/order/coupon"
+					},
+					"response": []
+				},
+				{
+					"name": "Shipping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "merchant_shipping_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "shipping_address",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/order/shipping"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Utilities",
+					"item": [
+						{
+							"name": "Airtime",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "api_key",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_type_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/utilities/airtime"
+							},
+							"response": []
+						},
+						{
+							"name": "Data",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "api_key",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_type_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/utilities/data"
+							},
+							"response": []
+						},
+						{
+							"name": "Electricity",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "api_key",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_type_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/utilities/electricity"
+							},
+							"response": []
+						},
+						{
+							"name": "Cable",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "api_key",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_type_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/utilities/cable"
+							},
+							"response": []
+						},
+						{
+							"name": "Tax",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "api_key",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_type_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/utilities/tax"
+							},
+							"response": []
+						},
+						{
+							"name": "Investment",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "api_key",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_type_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/utilities/investment"
+							},
+							"response": []
+						},
+						{
+							"name": "Toll",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "api_key",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/utilities/all"
+							},
+							"response": []
+						}
+					],
+					"description": "This directory includes APIs for Airtime, Data, Electricity, Cable, Tax, Toll And So Much More"
+				},
+				{
+					"name": "Payroll",
+					"item": [
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "details",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "active",
+											"value": "",
+											"description": "Yes or No",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/payroll/add"
+							},
+							"response": []
+						},
+						{
+							"name": "List",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/payroll/list"
+							},
+							"response": []
+						},
+						{
+							"name": "Details",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"description": "Yes or No",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/payroll/details"
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "details",
+											"value": "",
+											"description": "Yes or No",
+											"type": "text"
+										},
+										{
+											"key": "active",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/payroll/update"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Bulk Recipient",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "file",
+											"type": "file",
+											"src": []
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/payroll/add-bulk-recipient"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Recipient",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "active",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "account_no",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "bank_code",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "amount",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/payroll/add-recipient"
+							},
+							"response": []
+						},
+						{
+							"name": "Recipients",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/payroll/recipients"
+							},
+							"response": []
+						},
+						{
+							"name": "Recipient",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_type_exec_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/payroll/recipient"
+							},
+							"response": []
+						},
+						{
+							"name": "Activate",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\r\n\"token\" : \"\",\r\n\"product_id\" : \"\"\r\n\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "https://api.moipayway.com/product/payroll/activate/list"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Savings",
+					"item": [
+						{
+							"name": "Add",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "details",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "active",
+											"value": "",
+											"description": "Yes or No",
+											"type": "text"
+										},
+										{
+											"key": "validity",
+											"value": "",
+											"description": "7 = Weekly\n28 = Monthly",
+											"type": "text"
+										},
+										{
+											"key": "rounds",
+											"value": "",
+											"description": "Numbers of time beneficiary would pay in a given validity.\n\nE.g. If rounds is 1, its means the beneficiary pays once in a week or in a month",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/savings/add"
+							},
+							"response": []
+						},
+						{
+							"name": "List",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/savings/list"
+							},
+							"response": []
+						},
+						{
+							"name": "Details",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "",
+											"value": "",
+											"description": "Yes or No",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/savings/details"
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "name",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "details",
+											"value": "",
+											"description": "Yes or No",
+											"type": "text"
+										},
+										{
+											"key": "active",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/savings/update"
+							},
+							"response": []
+						},
+						{
+							"name": "Add Recipient",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_id",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "active",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "account_no",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "bank_code",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "amount",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/savings/add-recipient"
+							},
+							"response": []
+						},
+						{
+							"name": "Recipients",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/savings/recipients"
+							},
+							"response": []
+						},
+						{
+							"name": "Recipient",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "token",
+											"value": "",
+											"type": "text"
+										},
+										{
+											"key": "product_type_exec_id",
+											"value": "",
+											"type": "text"
+										}
+									]
+								},
+								"url": "https://api.moipayway.com/product/savings/recipient"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Fetch Type",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_type_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/fetch/type"
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "",
+									"description": "Page Number",
+									"type": "text"
+								},
+								{
+									"key": "limit",
+									"value": "",
+									"description": "To Display Per Page",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/list"
+					},
+					"response": []
+				},
+				{
+					"name": "Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/details"
+					},
+					"response": []
+				},
+				{
+					"name": "Types",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/types"
+					},
+					"response": []
+				},
+				{
+					"name": "Shipping",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_type_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "origin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "shipping_merge",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"description": "User Token",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/shipping"
+					},
+					"response": []
+				},
+				{
+					"name": "Wallet Transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "amount",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "remark",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "destination",
+									"value": "",
+									"description": "NGN ",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/wallet/transfer",
+						"description": "Transfer of funds from Payroll, Opem Markets, Thrift and other sectional products wallet"
+					},
+					"response": []
+				},
+				{
+					"name": "Wallet Transactions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/wallet/transactions"
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Wallet Transactions",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token ",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "from",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "to",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/filter/wallet/transactions"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Pin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "pin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/update/pin"
+					},
+					"response": []
+				},
+				{
+					"name": "Reports",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "report",
+									"value": "",
+									"description": "top_sales\ntop_category",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/reports",
+						"description": "Reporting & Analytics"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Dispatcher Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "merchant_team_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "origin",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"description": "User Token",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/get/dispatcher/details"
+					},
+					"response": []
+				},
+				{
+					"name": "Filter Orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "from",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "to",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"description": "User Token",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/get/dispatcher/details",
+						"description": "This endpoint allows you to filter and retrieve details of a product orders (such as thrift, peer to peer, payroll)"
+					},
+					"response": []
+				},
+				{
+					"name": "Orders",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "order_status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "payment_status",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"description": "User Token",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/orders"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Routes",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "mode",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "origin",
+									"value": "",
+									"description": "To get available route ",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/product/get/routes"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Checkout",
+			"item": [
+				{
+					"name": "Details",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_reference_code",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/checkout/details"
+					},
+					"response": []
+				},
+				{
+					"name": "Pay With Bank Transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_reference_code",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "bank_code",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/checkout/bank/transfer"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Sub",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sub_category_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/category/sub"
+					},
+					"response": []
+				},
+				{
+					"name": "Sub Products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "api_key",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "limit",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "page",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "sub_category_id",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "https://api.moipayway.com/category/sub/products"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
